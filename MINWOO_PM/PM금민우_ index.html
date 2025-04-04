@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 폰트 설정 -->
+    <link rel="icon" href="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- 파비콘 설정 -->
+    <link rel="icon" href="./likelion.ico">
+    <!-- 스타일 시트 -->
+    <link rel="stylesheet" href="PM금민우_style.css">
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+
+    <title>금민우의 TMI</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="header-title"><a href="#top">금민우의 TMI</a></h1>
+      <nav>
+        <ul>
+          <!-- a태그 이용해서 식별자로 페이지 이동 -->
+          <li><a href="#basicInfo">자기소개</a></li>
+          <li><a href="#balanceGame">밸런스 게임</a></li>
+          <li><a href="#favoriteFood">좋아하는 음식</a></li>
+          <li><a href="#wantToDo">하고싶은일</a></li>
+          <li><a href="#tmi">TMI</a></li>
+          <li><a href="#letter">13기에게 한마디</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- START basicInfo section -->
+      <section id="basicInfo">
+        <h2 class="section-title">기본 자기소개</h2>
+        <article>
+          <!-- width, height CSS로 재설정하기 -->
+          <!-- img 문법 참고하기 -->
+          <img src="./profile.jpg" alt="프로필 사진" id="basicInfo-profileImg" /> 
+          <ul>
+            <li>
+              <span class="basicInfo-question">이름</span>
+              <span class="basicInfo-answer">금민우</span>
+            </li>
+
+            <li>
+              <span class="basicInfo-question">학과</span>
+              <span class="basicInfo-answer"></span><a href="https://iise.ssu.ac.kr/">패기산공<img src="https://images.icon-icons.com/3251/PNG/512/cursor_click_regular_icon_203700.png" alt="클릭아이콘" class="inline-icon"></a></span>
+            </li>
+
+            <li>
+              <span class="basicInfo-question">나이</span>
+              <span class="basicInfo-answer">25</span>
+            </li>
+
+            <li>
+              <span class="basicInfo-question">MBTI</span>
+              <span class="basicInfo-answer">ENTJ</span>
+            </li>
+
+            <li>
+              <span class="basicInfo-question">파트</span>
+              <span class="basicInfo-answer">기획</span>
+            </li>
+
+            <li>
+              <span class="basicInfo-question">거주지</span>
+              <span class="basicInfo-answer">경기 고양</span>
+            </li>
+          </ul>
+        </article>
+      </section>
+      <!-- END basicINfo section -->
+
+      <!-- START balanceGame section -->
+      <section id="balanceGame">
+        <h2 class="section-title">밸런스 게임</h2>
+        <ol>
+          <li>
+            폭포수 기법 vs <span class="balanceGame-answer">폭포에서 물맞기</span>
+          </li>
+
+          <li>
+            평생 빵 먹기 vs <span class="balanceGame-answer">평생 떡 먹기</span>
+          </li>
+
+          <li>
+            민트초코 vs <span class="balanceGame-answer">애플민트</span>
+          </li>
+        </ol>
+      </section>
+      <!-- END balanceGame section -->
+
+      <!-- START favoriteFood section -->
+      <section id="favoriteFood">
+        <h2 class="section-title">좋아하는 음식</h2>
+        <!-- ol 태그와 li 태그로 작성 -->
+        <ol>
+          <li>육회</li>
+          <li>연어</li>
+          <li>국제돈</li>
+        </ol>
+      </section>
+      <!-- END favoriteFood section -->
+
+      <!-- START wantToDo section -->
+      <section id="wantToDo">
+        <h2 class="section-title">멋쟁이 사자들과 하고 싶은 것!</h2>
+        <!-- ul 태그와 li 태그로 작성 -->
+        <ul>
+          <li>일단 친바 1등</li>
+          <li>기깔나는 아이디어로 아이디어콘 성적 내기</li>
+          <li>PM으로써 역량 발휘하기</li>
+        </ul>
+      </section>
+      <!-- END wantToDo section -->
+
+      <!-- START tmi section -->
+      <section id="tmi">
+        <h2 class="section-title">나의 TMI</h2>
+        <ul>
+          <li>춤을 배우고 있습니다</li>
+          <li>간단한 시설 관리 잘 합니다</li>
+          <li>지하철에서 미드 보는 걸 좋아합니다</li>
+        </ul>
+      </section>
+      <!-- END tmi section -->
+
+      <!-- START letter section -->
+      <section id="letter">
+        <h2 class="section-title">1년 동안 함께 할 13기에게 한마디</h2>
+        <pre id="letter-pre">아기사자에서 멋쟁이사자가 될 때까지 잘 부탁드립니다! 어흥!</pre>
+      </section>
+      <!-- END letter section -->
+    </main>
+
+    <footer>
+      <ul>
+        <li>TEL | 010-3396-1559</li>
+        <li>gitHub | <a href="https://github.com/kummw1027">kummw1027</a></li>
+        <li>instagram | @e2dora7o </li>
+        <li>email | kummw1027@gmail.com</li>
+      </ul>
+    </footer>
+
+    <script>
+      // 부드러운 스크롤 애니메이션 함수
+      function smoothScrollTo(targetPosition, duration = 600) {
+        const start = window.pageYOffset;
+        const distance = targetPosition - start;
+        const startTime = performance.now();
+    
+        function animateScroll(currentTime) {
+          const elapsed = currentTime - startTime;
+          const progress = Math.min(elapsed / duration, 1);
+          // easeInOutQuad 이징 함수
+          const easeInOutQuad = progress < 0.5 
+            ? 2 * progress * progress 
+            : -1 + (4 - 2 * progress) * progress;
+          window.scrollTo(0, start + distance * easeInOutQuad);
+          if (progress < 1) {
+            requestAnimationFrame(animateScroll);
+          }
+        }
+        requestAnimationFrame(animateScroll);
+      }
+    
+      // nav 내의 모든 a 태그에 클릭 이벤트 추가
+      const navLinks = document.querySelectorAll("nav a");
+      navLinks.forEach(link => {
+        link.addEventListener("click", function(event) {
+          event.preventDefault(); // 기본 이동 동작 취소
+          const targetId = this.getAttribute("href");
+          if (targetId && targetId.startsWith("#")) {
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+              const targetPosition = targetElement.offsetTop;
+              smoothScrollTo(targetPosition);
+            }
+          }
+        });
+      });
+    </script>
+    
+  </body>
+</html>
