@@ -48,7 +48,7 @@ header {
   height: 40px;
 
   /* 바탕 컬러는 본인이 원하는 색상으로 수정해주세요 */
-  background-color: #ffffff;
+  background-color: #ffbec3;
 }
 
 header h1 {
@@ -80,7 +80,7 @@ header a {
   /* a 태그는 text-decoration을 none으로 해줘야 밑줄이 안 생겨요! */
   /* 색 자유! */
   text-decoration: none;
-  color: black;
+  color: rgb(128, 110, 110);
 }
 
 /* ✅ main ✅ */
@@ -114,7 +114,7 @@ section {
   width: 100%;
   padding: 10px;
   border-radius: 10px;
-  background-color: rgb(0, 0, 0);
+  background-color: #ffbec3;
   color: rgb(255, 255, 255);
 }
 
@@ -133,10 +133,10 @@ section {
   /* 높이는 250px */
   /* 모서리 둥글게 20px씩! */
   /* border는 5px, solid, 색은 자유! */
-  width: 250px;
+  width: 300px;
   height: auto;
   border-radius: 20px;
-  border: 5px solid black;
+  border: 5px solid #ffbec3;
   object-fit: cover; /* 승현의 선물 🎁, 이미지를 박스안에 쏘옥 넣어줘요~ */
 }
 
@@ -194,7 +194,7 @@ section {
   /* 박스 안쪽 여백은 4px씩 */
   font-size: 14px;
   font-weight: 600;
-  background-color: rgb(240, 255, 131);
+  background-color: #fafaa0;
   color: black;
   border-radius: 20px;
   padding: 4px;
@@ -220,7 +220,7 @@ section {
 
 #favoriteFood ol > li {
   /* 폰트크기는 14px, 굵기 600 으로 해주세요! */
-  fonst-size: 14px;
+  font-size: 14px;
   font-weight: 600;
 }
 
@@ -266,6 +266,8 @@ section {
 
 #tmi ol > li {
   /* 폰트크기는 14px, 굵기 600 으로 해주세요! */
+  font-size: 14px;
+  font-weight: 600;
 }
 
 /* 💖 letter 💖 12기에게 한마디 */
@@ -274,6 +276,12 @@ section {
   /* 모서리 둥글게 10px씩 */
   /* 가장자리 외곽선은 1px solid, 색상은 본인 마음대로! */
   /* 박스 안쪽 여백은 상하 20px, 좌우 10px씩 */
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid #ffbec3;
+  padding: 20px 10px;
+  background-color: #ffe4e1;
 }
 
 /* ✅ footer ✅ */
@@ -281,14 +289,21 @@ footer {
   /* 너비는 100% */
   /* 배경색 본인 마음대로! */
   /* 박스 안쪽 여백은 20px씩 */
+  width: 100%;
+  background-color: #ffe4e1;
+  padding: 20px;
 }
 
 footer ul > li {
   /* 폰트크기는 10px */
   /* 폰트 색상도 지정해주세요 */
+  font-size: 10px;
+  color: rgb(208, 107, 107);
 }
 
 footer a {
   /* a 태그는 text-decoration을 none으로 해줘야 밑줄이 안 생겨요! */
   /* 색 자유! */
+  text-decoration: none;
+  color: rgb(208, 107, 107);
 }
