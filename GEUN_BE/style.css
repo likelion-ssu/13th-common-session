@@ -64,7 +64,7 @@ header > nav ul {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  allign-items: center;
+  align-items: center;
   /*background-color: aqua;*/
   gap: 10px;
 }
