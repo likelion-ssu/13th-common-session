@@ -55,7 +55,7 @@ header {
 header h1 {
   /* 폰트크기는 16px, 굵기 800 으로 해주세요 */
   font-size: 16px
-  font-weight:800;
+  font-weight: 800;
 }
 
 header > nav ul {
@@ -67,7 +67,7 @@ header > nav ul {
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  background-color:aqua;
+  background-color:rgb(235, 222, 206);
   gap: 10px
 }
 
@@ -106,6 +106,7 @@ section {
   width: 600px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin-top: 20px
 }
 
@@ -113,11 +114,13 @@ section {
   /* 안쪽 여백은 위아래 왼쪽 오른쪽 모두 10px씩 */
   /* 모서리 둥글게 10px씩! */
   /* 배경색과 폰트색은 원하는 색상으로 지정해주세요 */
+  font-size: 20px;
+  font-weight: 700;
+  width: 100%;
   padding: 10px;
-  border-radius : 10px;
-  background-color:antiquewhite
-  color : black
-  width: 100%
+  border-radius: 10px;
+  background-color: antiquewhite;
+  color: black;
   
 }
 
@@ -126,7 +129,9 @@ section {
   /* 가운데정렬 */
   /* 프로필이미지와 정보들 사이의 간격 30px */
   display: flex;
-  justify-content: ;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 
 }
 
@@ -139,7 +144,8 @@ section {
   width: 150px;
   height: 150px;
   border-radius: 20px;
-  border: 5px solid aqua
+  border: 5px solid #eae4d0;
+
 }
 
 #basicInfo ul {
@@ -163,7 +169,7 @@ section {
 .basicInfo-answer {
   /* 폰트크기는 12px, 굵기 600 으로 해주세요! */
   font-size: 12px;
-  font-weight:600;
+  font-weight: 600;
 
 }
 
@@ -183,7 +189,7 @@ section {
   /* 사이 여백은 30px로 줘요! */
   display: flex;
   flex-direction: column;
-  gap: 30px
+  gap: 30px;
 }
 
 #balanceGame ol > li {
@@ -201,7 +207,7 @@ section {
   font-weight: 600;
   background-color: bisque;
   color: black;
-  border-radius: 10px;
+  border-radius: 20px;
   padding: 4px;
 }
 
@@ -209,29 +215,46 @@ section {
 #favoriteFood {
   /* 기본 축 y */
   /* x축 가운데 정렬 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #favoriteFood ol {
   /* y축 가운데 정렬 */
   /* 사이 여백은 30px로 줘요! */
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 #favoriteFood ol > li {
   /* 폰트크기는 14px, 굵기 600 으로 해주세요! */
+  font-size: 14px;
+  font-weight: 600;
 }
 
 /* 💖 wantToDo 💖 wantToDo */
 #wantToDo {
   /* 기본 축 y */
   /* x축 가운데 정렬 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #wantToDo ul {
   /* y축 정렬 */
   /* 사이 여백은 30px로 줘요! */
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
 
   & > li {
     /* 폰트크기는 14px, 굵기 600 으로 해주세요! */
+    font-size: 14px;
+    font-weight: 600;
   }
 }
 
@@ -239,15 +262,23 @@ section {
 #tmi {
   /* 기본 축 y */
   /* x축 가운데 정렬 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #tmi ol {
   /* y축 정렬 */
   /* 사이 여백은 30px로 줘요! */
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 #tmi ol > li {
   /* 폰트크기는 14px, 굵기 600 으로 해주세요! */
+  font-size: 14px;
+  font-weight: 600;
 }
 
 /* 💖 letter 💖 12기에게 한마디 */
@@ -256,6 +287,11 @@ section {
   /* 모서리 둥글게 10px씩 */
   /* 가장자리 외곽선은 1px solid, 색상은 본인 마음대로! */
   /* 박스 안쪽 여백은 상하 20px, 좌우 10px씩 */
+  width: 100%;
+  height: auto;
+  padding: 20px 10px;
+  border-radius: 10px;
+  border: 1px solid #eae4d0
 }
 
 /* ✅ footer ✅ */
@@ -263,14 +299,21 @@ footer {
   /* 너비는 100% */
   /* 배경색 본인 마음대로! */
   /* 박스 안쪽 여백은 20px씩 */
+  width: 100%;
+  background-color: rgb(191, 152, 101);
+  padding: 20px;
 }
 
 footer ul > li {
   /* 폰트크기는 10px */
   /* 폰트 색상도 지정해주세요 */
+  font-size: 10px;
+  color: black;
 }
 
 footer a {
   /* a 태그는 text-decoration을 none으로 해줘야 밑줄이 안 생겨요! */
   /* 색 자유! */
+  text-decoration: none;
+  color: black;
 }
