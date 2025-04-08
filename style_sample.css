@@ -1,7 +1,6 @@
 @charset "utf-8";
-@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/variable/pretendardvariable.css");
-/* 전체 선택자 */
-* { 
+
+* {
   /* 승현의 선물 🎁 */
   /* 박스 사이즈를 padding, margin 포함해서 계산 + 폰트 pretendard설정 */
   box-sizing: border-box;
@@ -20,15 +19,14 @@ body {
 
 ul {
   /* 승현의 선물 🎁 */
-  /* 앞으로 있을 모든 ul 리스트 앞에 점을 없애겠다 */
-  list-style-type: none; 
-  /* 앞에 나오는 점 초기화, 밑에도 마찬가지 */
+  /* 앞으로 있을 모든 ul 리스트 앞에 점을 없애겠다 - 초기화 시킨거임 */
+  list-style-type: none;
 }
 
 ul,
 ol {
   /* 승현의 선물 🎁 */
-  /* 앞으로 있을 모든 리스트 앞에 점과 여백 없애겠다 */
+  /* 앞으로 있을 모든 리스트 앞에 점과 여백 없애겠다 - 초기화 */
   margin: 0px;
   padding: 0px;
 }
@@ -50,7 +48,7 @@ header {
   height: 40px;
 
   /* 바탕 컬러는 본인이 원하는 색상으로 수정해주세요 */
-  background-color: #ffffff;
+  background-color: blanchedalmond;
 }
 
 header h1 {
@@ -64,14 +62,12 @@ header > nav ul {
   /* x축 오른쪽부터 정렬 */
   /* y축 가운데 정렬 */
   /* 사이 간격은 10px로 해주세요~ */
-  display : flex;
+  display: flex;
   flex-direction: row;
-  /* 지정 안해도 row가 기본 값임 */
-  justify-content: flex-end;
-  /* 위에 #정보 여러 줄로 나뉜거 한 줄로 변경 */
-  /* background-color: aqua; -> 실행되는지 확인용*/
-  gap : 10px;
-  /* 사이간격 */
+  justfy-content: flex-end;
+  align-items: center;
+  background-color:burlywood;
+  gap: 10px;
 
 }
 
@@ -85,9 +81,8 @@ header ul > li {
 header a {
   /* a 태그는 text-decoration을 none으로 해줘야 밑줄이 안 생겨요! */
   /* 색 자유! */
-  text-decoration: none; 
-  /* underline 삭제됨 */
-  /* color: ; 이따 정하기 */
+  text-decoration: none;
+  color: black;
 }
 
 /* ✅ main ✅ */
@@ -99,35 +94,32 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-/* 모든 글 가운데 정렬 */
-  gap : 50px; 
-  /* 사이 간격 */
-  margin : 30px 0px;
-  /* 얘도 background-color 통해 적용되는지 확인 가능, 상하 좌우 순서*/
-
-
+  gap: 50px;
+  margin: 30px 0px; /*여백부분 없애기*/
 }
 
 section {
   /* 너비는 600px */
   /* 플렉스 속성(y축 정렬) */
   /* 위쪽 마진만 20px 주세요 */
-  width : 600px;
+  width: 600px;
   display: flex;
   flex-direction: column;
   margin-top: 20px;
+
+
 }
 
 .section-title {
-  /* 안쪽 여백은 위아래 왼쪽 오른쪽 모두 10px씩 */
+  /* 안쪽 여백은 위아래 왼쪽 오른쪽 모두 10px씩 - 여백은 padding으로 부여, 글자와 배경이 조금 떨어지게 만드는 기능이다 */
   /* 모서리 둥글게 10px씩! */
   /* 배경색과 폰트색은 원하는 색상으로 지정해주세요 */
-  padding : 10px;
+  padding: 10px;
   border-radius: 10px;
-  background-color : #000;
-  color : #fff;
+  background-color: blanchedalmond;
+  color: black;
   width: 100%;
-  /* 배경 폰트 색 다 원하는대로 */
+
 }
 
 /* 💖 basicInfo 💖 기본정보 */
@@ -137,7 +129,8 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap : 30px;
+  gap: 30px;
+
 }
 
 #basicInfo-profileImg {
@@ -145,10 +138,11 @@ section {
   /* 높이는 250px */
   /* 모서리 둥글게 20px씩! */
   /* border는 5px, solid, 색은 자유! */
-  width : 150px;
-  height : 150px;
+  width: 150px;
+  height: 150px;
   border-radius: 20px;
-  border : 5px solid aqua;
+  border: 5px solid black;
+
   object-fit: cover; /* 승현의 선물 🎁, 이미지를 박스안에 쏘옥 넣어줘요~ */
 }
 
@@ -172,7 +166,7 @@ section {
 
 .basicInfo-answer {
   /* 폰트크기는 12px, 굵기 600 으로 해주세요! */
-  font-size : 12px;
+  font-size: 12px;
   font-weight: 600;
 }
 
@@ -180,7 +174,7 @@ section {
 #balanceGame {
   /* 기본 축 y */
   /* x축 가운데 정렬 */
-  display : flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
 }
@@ -188,15 +182,17 @@ section {
 #balanceGame ol {
   /* y축 정렬 */
   /* 사이 여백은 30px로 줘요! */
-  display : flex;
+  display: flex;  
   flex-direction: column;
-  gap : 30px;
+  gap: 30px;
+
 }
 
 #balanceGame ol > li {
   /* 폰트크기는 14px, 굵기 600 으로 해주세요! */
-  font-size : 14px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 600; 
+
 }
 
 .balanceGame-answer {
@@ -206,55 +202,81 @@ section {
   /* 박스 안쪽 여백은 4px씩 */
   font-size: 14px;
   font-weight: 600;
-  background-color: black;
-  color : yellowgreen;
+  background-color: burlywood;
+  color: black;      
   border-radius: 20px;
-  padding : 4px;
+  padding: 4px;
+
 }
 
 /* 💖 favoriteFood 💖 favoriteFood */
 #favoriteFood {
   /* 기본 축 y */
   /* x축 가운데 정렬 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #favoriteFood ol {
   /* y축 가운데 정렬 */
   /* 사이 여백은 30px로 줘요! */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
 }
 
 #favoriteFood ol > li {
-  /* 폰트크기는 14px, 굵기 600 으로 해주세요! */
+   /* 폰트크기는 14px, 굵기 600 으로 해주세요! */
+   font-size: 14px;
+   font-weight: 600;
 }
 
 /* 💖 wantToDo 💖 wantToDo */
 #wantToDo {
-  /* 기본 축 y */
+ /* 기본 축 y */
   /* x축 가운데 정렬 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #wantToDo ul {
-  /* y축 정렬 */
+ /* y축 정렬 */
   /* 사이 여백은 30px로 줘요! */
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 
   & > li {
     /* 폰트크기는 14px, 굵기 600 으로 해주세요! */
+    font-size: 14px;
+    font-weight: 600;
   }
 }
 
 /* 💖 tmi 💖 tmi */
 #tmi {
-  /* 기본 축 y */
+ /* 기본 축 y */
   /* x축 가운데 정렬 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #tmi ol {
   /* y축 정렬 */
   /* 사이 여백은 30px로 줘요! */
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 #tmi ol > li {
   /* 폰트크기는 14px, 굵기 600 으로 해주세요! */
+  font-size: 14px;
+  font-weight: 600;
 }
 
 /* 💖 letter 💖 12기에게 한마디 */
@@ -263,21 +285,33 @@ section {
   /* 모서리 둥글게 10px씩 */
   /* 가장자리 외곽선은 1px solid, 색상은 본인 마음대로! */
   /* 박스 안쪽 여백은 상하 20px, 좌우 10px씩 */
+  width: 100%;
+  height: auto;
+  padding: 20px 10px;
+  border-radius: 10px;
+  border: 1px solid #6a3937;
 }
 
 /* ✅ footer ✅ */
 footer {
-  /* 너비는 100% */
+ /* 너비는 100% */
   /* 배경색 본인 마음대로! */
   /* 박스 안쪽 여백은 20px씩 */
+  width: 100%;
+  background-color: burlywood;
+  padding: 20px;
 }
 
 footer ul > li {
-  /* 폰트크기는 10px */
+ /* 폰트크기는 10px */
   /* 폰트 색상도 지정해주세요 */
+  font-size: 10px;
+  color: black;
 }
 
 footer a {
   /* a 태그는 text-decoration을 none으로 해줘야 밑줄이 안 생겨요! */
   /* 색 자유! */
+  text-decoration: none;
+  color: black;
 }
