@@ -48,7 +48,7 @@ header {
   height: 40px;
 
   /* 바탕 컬러는 본인이 원하는 색상으로 수정해주세요 */
-  background-color: #ffffff;
+  background-color: #e4e5ff;
 }
 
 header h1 {
@@ -66,7 +66,6 @@ header > nav ul {
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  background-color: aqua;
   gap: 10px;
 }
 
@@ -81,7 +80,7 @@ header a {
   /* a 태그는 text-decoration을 none으로 해줘야 밑줄이 안 생겨요! */
   /* 색 자유! */
   text-decoration: none;
-  color: black;
+  color: rgb(99, 122, 186);
 }
 
 /* ✅ main ✅ */
@@ -113,7 +112,7 @@ section {
   /* 배경색과 폰트색은 원하는 색상으로 지정해주세요 */
   padding: 10px;
   border-radius: 10px;
-  background-color: black;
+  background-color: rgb(30, 48, 97);
   color: #ffffff;
   width: 100%;
 }
@@ -134,13 +133,10 @@ section {
   /* 모서리 둥글게 20px씩! */
   /* border는 5px, solid, 색은 자유! */
   object-fit: cover; /* 승현의 선물 🎁, 이미지를 박스안에 쏘옥 넣어줘요~ */
-  width: 150px;
-  height: 150px;
-  border-radius: 5px;
-  border: 5px;
-
-
-
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  border: 5px solid #e4e5ff;
 }
 
 #basicInfo ul {
@@ -153,7 +149,7 @@ section {
 .basicInfo-question {
   /* 승현의 선물 🎁 */
   /* 폰트크기는 13px, 굵기 500 으로 해주세요! */
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 500;
   /* 요소 뒤에 ':' 붙여주기 */
   &::after {
@@ -163,7 +159,7 @@ section {
 
 .basicInfo-answer {
   /* 폰트크기는 12px, 굵기 600 으로 해주세요! */
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
 }
 
@@ -197,8 +193,8 @@ section {
   /* 박스 안쪽 여백은 4px씩 */
   font-size: 14px;
   font-weight: 600;
-  background-color: black;
-  color: yellow;
+  background-color: #e4e5ff;
+  color: rgb(24, 41, 89);
   border-radius: 20px;
   padding: 4px;
 }
@@ -207,29 +203,46 @@ section {
 #favoriteFood {
   /* 기본 축 y */
   /* x축 가운데 정렬 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #favoriteFood ol {
   /* y축 가운데 정렬 */
   /* 사이 여백은 30px로 줘요! */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
 }
 
 #favoriteFood ol > li {
   /* 폰트크기는 14px, 굵기 600 으로 해주세요! */
+  font-size: 14px;
+  font-weight: 600;
 }
 
 /* 💖 wantToDo 💖 wantToDo */
 #wantToDo {
   /* 기본 축 y */
   /* x축 가운데 정렬 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #wantToDo ul {
   /* y축 정렬 */
   /* 사이 여백은 30px로 줘요! */
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 
   & > li {
     /* 폰트크기는 14px, 굵기 600 으로 해주세요! */
+    font-size: 14px;
+    font-weight: 600;
   }
 }
 
@@ -237,15 +250,23 @@ section {
 #tmi {
   /* 기본 축 y */
   /* x축 가운데 정렬 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #tmi ol {
   /* y축 정렬 */
   /* 사이 여백은 30px로 줘요! */
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 #tmi ol > li {
   /* 폰트크기는 14px, 굵기 600 으로 해주세요! */
+  font-size: 14px;
+  font-weight: 600;
 }
 
 /* 💖 letter 💖 12기에게 한마디 */
@@ -254,6 +275,17 @@ section {
   /* 모서리 둥글게 10px씩 */
   /* 가장자리 외곽선은 1px solid, 색상은 본인 마음대로! */
   /* 박스 안쪽 여백은 상하 20px, 좌우 10px씩 */
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid #e4e5ff;
+  padding: 15px 10px;
+
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* ✅ footer ✅ */
@@ -261,14 +293,21 @@ footer {
   /* 너비는 100% */
   /* 배경색 본인 마음대로! */
   /* 박스 안쪽 여백은 20px씩 */
+  width: 100%;
+  background-color: #e4e5ff;
+  padding: 20px;
 }
 
 footer ul > li {
   /* 폰트크기는 10px */
   /* 폰트 색상도 지정해주세요 */
+  font-size: 10px;
+  color: black;
 }
 
 footer a {
   /* a 태그는 text-decoration을 none으로 해줘야 밑줄이 안 생겨요! */
   /* 색 자유! */
+  text-decoration: none;
+  color: rgb(99, 122, 186);
 }
