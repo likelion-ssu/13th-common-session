@@ -48,7 +48,8 @@ header {
   height: 40px;
 
   /* 바탕 컬러는 본인이 원하는 색상으로 수정해주세요 */
-  background-color: #ffffff;
+  background-color: #C9E4CA;
+  opacity: 80%;
 }
 
 header h1 {
@@ -79,7 +80,7 @@ header a {
   /* a 태그는 text-decoration을 none으로 해줘야 밑줄이 안 생겨요! */
   /* 색 자유! */
   text-decoration: none;
-  color: rgb(5, 66, 46);
+  color: #000000;
 }
 
 /* ✅ main ✅ */
@@ -102,6 +103,7 @@ section {
   width: 600px;
   display: flex;
   flex-direction: column;
+  align-items: center; 
   margin-top: 20px;
 }
 
@@ -111,8 +113,10 @@ section {
   /* 배경색과 폰트색은 원하는 색상으로 지정해주세요 */
   padding: 10px;
   border-radius: 10px;
-  background-color: rgb(25, 190, 135);
+  background-color: #87BBA2;
   width: 100%;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 /* 💖 basicInfo 💖 기본정보 */
@@ -133,7 +137,7 @@ section {
   width: 250;
   height: 250;
   border-radius: 20px;
-  border: 5px solid ;
+  border: 5px solid #F2C078;
   object-fit: cover; /* 승현의 선물 🎁, 이미지를 박스안에 쏘옥 넣어줘요~ */
 }
 
@@ -157,6 +161,8 @@ section {
 
 .basicInfo-answer {
   /* 폰트크기는 12px, 굵기 600 으로 해주세요! */
+  font-size: 12px;
+  font-weight: 600;
 }
 
 /* 💖 balanceGame 💖 밸런스_게임 */
@@ -190,7 +196,7 @@ section {
   /* 박스 안쪽 여백은 4px씩 */
   font-size: 14px;
   font-weight: 600;
-  background-color: yellow;
+  background-color: #F2C078;
   color: black;
   border-radius: 20px;
   padding: 4px;
@@ -200,29 +206,46 @@ section {
 #favoriteFood {
   /* 기본 축 y */
   /* x축 가운데 정렬 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #favoriteFood ol {
   /* y축 가운데 정렬 */
   /* 사이 여백은 30px로 줘요! */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
 }
 
 #favoriteFood ol > li {
   /* 폰트크기는 14px, 굵기 600 으로 해주세요! */
+  font-size: 14px;
+  font-weight: 600;
 }
 
 /* 💖 wantToDo 💖 wantToDo */
 #wantToDo {
   /* 기본 축 y */
   /* x축 가운데 정렬 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #wantToDo ul {
   /* y축 정렬 */
   /* 사이 여백은 30px로 줘요! */
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 
   & > li {
     /* 폰트크기는 14px, 굵기 600 으로 해주세요! */
+    font-size: 14px;
+    font-weight: 600;
   }
 }
 
@@ -230,15 +253,23 @@ section {
 #tmi {
   /* 기본 축 y */
   /* x축 가운데 정렬 */
+  display:flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #tmi ol {
   /* y축 정렬 */
   /* 사이 여백은 30px로 줘요! */
+  display: flex;
+  flex-direction: column;
+  gap:30px;
 }
 
 #tmi ol > li {
   /* 폰트크기는 14px, 굵기 600 으로 해주세요! */
+  font-size: 14px;
+  font-weight: 600;
 }
 
 /* 💖 letter 💖 12기에게 한마디 */
@@ -247,6 +278,14 @@ section {
   /* 모서리 둥글게 10px씩 */
   /* 가장자리 외곽선은 1px solid, 색상은 본인 마음대로! */
   /* 박스 안쪽 여백은 상하 20px, 좌우 10px씩 */
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 2px dotted #7EBC89;
+  padding: 20px 10px;
+  /* background-color: antiquewhite; */
+  font-size: 16px;
+  font-weight: 600;
 }
 
 /* ✅ footer ✅ */
@@ -254,14 +293,20 @@ footer {
   /* 너비는 100% */
   /* 배경색 본인 마음대로! */
   /* 박스 안쪽 여백은 20px씩 */
+  width: 100%;
+  background-color: #C9E4CA;
+  padding:20px;
 }
 
 footer ul > li {
   /* 폰트크기는 10px */
   /* 폰트 색상도 지정해주세요 */
+  font-size: 10px;
+  color:#3e422f;
 }
 
 footer a {
   /* a 태그는 text-decoration을 none으로 해줘야 밑줄이 안 생겨요! */
   /* 색 자유! */
+  text-decoration: none;
 }
