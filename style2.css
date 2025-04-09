@@ -45,9 +45,10 @@ header {
   align-items: center;
   padding: 0 20px;
   height: 40px;
+  color: #5f5f5f;
 
   /* 바탕 컬러는 본인이 원하는 색상으로 수정해주세요 */
-  background-color: #f1e8f9;
+  background-color: #f9f9f9;
 }
 
 header h1 {
@@ -79,7 +80,7 @@ header a {
   /* a 태그는 text-decoration을 none으로 해줘야 밑줄이 안 생겨요! */
   /* 색 자유! */
   text-decoration: none;
-  color: #000;
+  color: #5f5f5f;
 }
 
 /* ✅ main ✅ */
@@ -91,8 +92,14 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 50px;
+  /* gap: 50px; */
   margin: 30px 0;
+  /* background-color: red; */
+}
+
+main h2 {
+  font-size: 20px;
+  font-weight: 500;
 }
 
 section {
@@ -102,7 +109,12 @@ section {
   width: 600px;
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
+  align-items: center;
+  /* margin-top: 20px; */
+  padding-bottom: 50px;
+  padding-top: 10px;
+  /* background-color: rgb(253, 236, 236, 0.8); */
+  /* border-radius: 20px; */
 }
 
 .section-title {
@@ -110,15 +122,34 @@ section {
   /* 모서리 둥글게 10px씩! */
   /* 배경색과 폰트색은 원하는 색상으로 지정해주세요 */
   padding: 10px;
-  border-radius: 10px;
-  background-color: beige;
-  width: 100%;
+  /* border-radius: 0px; */
+  /* background-color: beige; */
+  /* border-bottom: 2px solid #f4e56e; */
+  width: 80%;
+  margin-bottom: 30px;
+  font-weight: 800;
+}
+
+#basicInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fffee2;
+  color: #efcb00;
+}
+
+#basicInfo .section-title {
+  border-bottom: 2px dashed #efcb00;
 }
 
 /* 💖 basicInfo 💖 기본정보 */
 #basicInfo article {
   /* 가운데정렬 */
   /* 프로필이미지와 정보들 사이의 간격 30px */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
 
 #basicInfo-profileImg {
@@ -132,9 +163,9 @@ section {
   align-items: center;
   gap: 30px;
   width: 250px;
-  /* height: 250px; */
-  border-radius: 20px;
-  border: 5px solid beige;
+  height: 250px;
+  /* border-radius: 10px; */
+  border: 5px solid hsl(51, 100%, 46.9%, 0.3);
 }
 
 #basicInfo ul {
@@ -142,16 +173,17 @@ section {
   /* y축 정렬 */
   display: flex;
   flex-direction: column;
+  gap: 5px;
 }
 
 .basicInfo-question {
   /* 승현의 선물 🎁 */
   /* 폰트크기는 13px, 굵기 500 으로 해주세요! */
   font-size: 13px;
-  font-weight: 500;
+  font-weight: 700;
   /* 요소 뒤에 ':' 붙여주기 */
   &::after {
-    content: ' : ';
+    content: '   |   ';
   }
 }
 
@@ -168,6 +200,12 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #fff4fe;
+  color: #eca5da;
+}
+
+#balanceGame .section-title {
+  border-bottom: 2px dashed #eca5da;
 }
 
 #balanceGame ol {
@@ -175,13 +213,13 @@ section {
   /* 사이 여백은 30px로 줘요! */
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 18px;
 }
 
 #balanceGame ol > li {
   /* 폰트크기는 14px, 굵기 600 으로 해주세요! */
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .balanceGame-answer {
@@ -189,40 +227,88 @@ section {
   /* 배경색과 폰트색은 원하는 색상으로 지정해주세요 */
   /* 모서리 둥글게 20px씩 */
   /* 박스 안쪽 여백은 4px씩 */
-  font-size: 14px;
-  font-weight: 600;
-  background-color: beige;
-  border-radius: 20px;
-  color: purple;
+  background-color: hsl(315, 65.1%, 78.6%, 0.2);
+  /* border-radius: 20px; */
+
+  padding: 2px 8px;
+  margin: 0 10px;
+  border: 2px #eca5da;
 }
 
 /* 💖 favoriteFood 💖 favoriteFood */
 #favoriteFood {
   /* 기본 축 y */
   /* x축 가운데 정렬 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #eafff8;
+  color: #75d2c7;
+}
+
+#favoriteFood .section-title {
+  border-bottom: 2px dashed #75d2c7;
+}
+
+#foodImage {
+  object-fit: cover;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+#foodImage-Indv {
+  height: 130px;
+  width: 130px;
+  border-radius: 1px;
+  /* border: 2px solid #c9f9f3; */
 }
 
 #favoriteFood ol {
   /* y축 가운데 정렬 */
   /* 사이 여백은 30px로 줘요! */
+  display: flex;
+  flex-direction: row;
+  /* !!!!!  */
+  gap: 95px;
+  padding-top: 10px;
 }
 
 #favoriteFood ol > li {
   /* 폰트크기는 14px, 굵기 600 으로 해주세요! */
+  font-size: 14px;
+  font-weight: 500;
 }
 
 /* 💖 wantToDo 💖 wantToDo */
 #wantToDo {
   /* 기본 축 y */
   /* x축 가운데 정렬 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff2e5;
+  color: #e99976;
+}
+
+#wantToDo .section-title {
+  border-bottom: 2px dashed #e99976;
 }
 
 #wantToDo ul {
   /* y축 정렬 */
   /* 사이 여백은 30px로 줘요! */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
 
   & > li {
     /* 폰트크기는 14px, 굵기 600 으로 해주세요! */
+    font-size: 14px;
+    font-weight: 500;
+    /* background-color: white; */
+    /* border-radius: 100px; */
   }
 }
 
@@ -230,23 +316,59 @@ section {
 #tmi {
   /* 기본 축 y */
   /* x축 가운데 정렬 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f6ffe7;
+  color: #95d130;
+}
+
+#tmi .section-title {
+  border-bottom: 2px dashed #95d130;
 }
 
 #tmi ol {
   /* y축 정렬 */
   /* 사이 여백은 30px로 줘요! */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 #tmi ol > li {
   /* 폰트크기는 14px, 굵기 600 으로 해주세요! */
+  font-size: 14px;
+  font-weight: 500;
 }
 
+#letter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f5f1ff;
+  color: #d69cf8;
+}
+
+#letter .section-title {
+  border-bottom: 2px dashed #d69cf8;
+}
 /* 💖 letter 💖 12기에게 한마디 */
 #letter-pre {
   /* 너비는 100%, 높이는 자동 */
   /* 모서리 둥글게 10px씩 */
   /* 가장자리 외곽선은 1px solid, 색상은 본인 마음대로! */
   /* 박스 안쪽 여백은 상하 20px, 좌우 10px씩 */
+  height: auto;
+  width: 80%;
+  /* border-radius: 10px; */
+  /* border: 1px solid #000; */
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: hsl(278, 76.5%, 70.7%, 0.1);
+  font-size: 14px;
+  font-weight: 500;
 }
 
 /* ✅ footer ✅ */
@@ -254,14 +376,21 @@ footer {
   /* 너비는 100% */
   /* 배경색 본인 마음대로! */
   /* 박스 안쪽 여백은 20px씩 */
+  width: 100%;
+  background-color: #f9f9f9;
+  padding: 20px;
+  color: #5f5f5f;
 }
 
 footer ul > li {
   /* 폰트크기는 10px */
   /* 폰트 색상도 지정해주세요 */
+  font-size: 10px;
+  color: ;
 }
 
 footer a {
   /* a 태그는 text-decoration을 none으로 해줘야 밑줄이 안 생겨요! */
   /* 색 자유! */
+  text-decoration: none;
 }
